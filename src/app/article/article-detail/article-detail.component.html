@@ -1,0 +1,7 @@
+<h1>{{article?.title}}</h1>
+<p>{{article?.text}}</p>
+<h3>Posted by</h3>
+<app-profile-card [profile]="article?.author"></app-profile-card>
+<h3>Comments</h3>
+<app-comments-card [comments]="article?.comments"></app-comments-card>
+<a class="btn btn-outline" [routerLink]="['/articles']"><clr-icon shape="arrow left"></clr-icon> Go back</a>

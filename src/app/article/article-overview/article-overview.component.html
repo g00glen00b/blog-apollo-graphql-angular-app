@@ -1,0 +1,6 @@
+<h1>Blog articles</h1>
+<div class="row">
+  <div class="col-sm-4" *ngFor="let article of articles">
+    <app-article-card [article]="article"></app-article-card>
+  </div>
+</div>

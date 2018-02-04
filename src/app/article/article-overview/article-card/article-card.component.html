@@ -1,0 +1,9 @@
+<div class="card">
+  <div  class="card-block">
+    <div class="card-title">{{article?.title}}</div>
+    <div class="card-text">Posted by {{article?.author.username}}</div>
+  </div>
+  <div class="card-footer">
+    <a [routerLink]="['/article', article?.id]" class="btn btn-sm btn-link">Read more</a>
+  </div>
+</div>
